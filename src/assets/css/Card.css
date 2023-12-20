@@ -8,9 +8,34 @@
     padding-top: 50px;
 }
 
-.h1-card{
+.h2-card{
     padding: 0;
+    color: #fff;
 }
 .img-card{
     width: 270px;
+}
+
+.cls-1 {
+    fill: #fff;
+    stroke-width: 0px;
+  }
+@media only screen and (max-width:1024px){
+    .card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 250px;
+        height: 550px;
+    }
+
+    .img-card{
+        width: 200px;
+    }
+
+    .h2-card{
+        color: #fff;
+    }
+
 }
