@@ -1,4 +1,4 @@
-[!imagen](./public/oraculo.png)
+[!imagen](oraculo.png)
 
 # LET'S START
 
