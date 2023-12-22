@@ -5,28 +5,27 @@ import partir from './assets/static/partir.png'
 import calma from './assets/static/calma.png'
 import paciencia from './assets/static/paciencia.png'
 import tiempo from './assets/static/tiempo.png'
+import pena from './assets/static/pena.png'
+import falta from './assets/static/falta.png'
+import accion from './assets/static/accion.png'
+import si from './assets/static/si.png'
+import cerca from './assets/static/cerca.png'
 
 export default function Card() {
   const [selectedItem, setSelectedItem] = useState(null);
-   
-  //   const getRandomItem = () => {
-  //     const randomIndex = Math.floor(Math.random() * items.length);
-  //     const selectedRandomItem = items[randomIndex];
-  //     setRandomItem(selectedRandomItem);
-  // };
 
   useEffect(() => { 
     let items = [
         {img: partir, quote: 'Es momento de partir'},
-        {img: '', quote: 'No vale la pena'},
+        {img: pena, quote: 'No vale la pena'},
         {img: calma, quote: 'Tomalo con calma'},
         {img: confia, quote: 'Confiá en vos'},
-        {img: '', quote: 'Falta algo'},
-        {img: '', quote: 'Tomá acción'},
+        {img: falta, quote: 'Falta algo'},
+        {img: accion, quote: 'Tomá acción'},
         {img: paciencia, quote: 'Paciencia'},
-        {img: '', quote: 'Está cerca'},
+        {img: cerca, quote: 'Está cerca'},
         {img: tiempo, quote: 'En un tiempo'},
-        {img: '', quote: 'Claramente, SI'},
+        {img: si, quote: 'Claramente, SI'},
     ]
     const timeoutId = setTimeout(() => {
       const randomIndex = Math.floor(Math.random() * items.length);
